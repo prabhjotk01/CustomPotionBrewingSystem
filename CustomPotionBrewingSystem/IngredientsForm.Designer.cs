@@ -28,72 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            dataGridView1 = new DataGridView();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            label3 = new Label();
-            numericUpDown1 = new NumericUpDown();
+            lblHeading = new Label();
+            dgvIngredients = new DataGridView();
+            lblName = new Label();
+            txtIngredientName = new TextBox();
+            lblStock = new Label();
+            numStock = new NumericUpDown();
             btnAdd = new Button();
             btnUpdate = new Button();
             btnRetire = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvIngredients).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numStock).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lblHeading
             // 
-            label1.AccessibleName = "lblHeading";
-            label1.AutoSize = true;
-            label1.Location = new Point(26, 16);
-            label1.Name = "label1";
-            label1.Size = new Size(112, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Manage Ingredients";
+            lblHeading.AccessibleName = "lblHeading";
+            lblHeading.AutoSize = true;
+            lblHeading.Location = new Point(26, 16);
+            lblHeading.Name = "lblHeading";
+            lblHeading.Size = new Size(112, 15);
+            lblHeading.TabIndex = 0;
+            lblHeading.Text = "Manage Ingredients";
             // 
-            // dataGridView1
+            // dgvIngredients
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(27, 49);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(240, 150);
-            dataGridView1.TabIndex = 1;
+            dgvIngredients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvIngredients.Location = new Point(27, 49);
+            dgvIngredients.Name = "dgvIngredients";
+            dgvIngredients.Size = new Size(240, 150);
+            dgvIngredients.TabIndex = 1;
             // 
-            // label2
+            // lblName
             // 
-            label2.AccessibleName = "lblName";
-            label2.AutoSize = true;
-            label2.Location = new Point(30, 221);
-            label2.Name = "label2";
-            label2.Size = new Size(96, 15);
-            label2.TabIndex = 2;
-            label2.Text = "Ingredient Name";
+            lblName.AccessibleName = "lblName";
+            lblName.AutoSize = true;
+            lblName.Location = new Point(30, 221);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(96, 15);
+            lblName.TabIndex = 2;
+            lblName.Text = "Ingredient Name";
+            lblName.Click += lblName_Click;
             // 
-            // textBox1
+            // txtIngredientName
             // 
-            textBox1.AccessibleName = "txtIngredientName";
-            textBox1.Location = new Point(34, 247);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 3;
+            txtIngredientName.AccessibleName = "txtIngredientName";
+            txtIngredientName.Location = new Point(34, 247);
+            txtIngredientName.Name = "txtIngredientName";
+            txtIngredientName.Size = new Size(100, 23);
+            txtIngredientName.TabIndex = 3;
             // 
-            // label3
+            // lblStock
             // 
-            label3.AccessibleName = "lblStock";
-            label3.AutoSize = true;
-            label3.Location = new Point(35, 283);
-            label3.Name = "label3";
-            label3.Size = new Size(36, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Stock";
+            lblStock.AccessibleName = "lblStock";
+            lblStock.AutoSize = true;
+            lblStock.Location = new Point(35, 283);
+            lblStock.Name = "lblStock";
+            lblStock.Size = new Size(36, 15);
+            lblStock.TabIndex = 4;
+            lblStock.Text = "Stock";
             // 
-            // numericUpDown1
+            // numStock
             // 
-            numericUpDown1.AccessibleName = "numStock";
-            numericUpDown1.Location = new Point(40, 310);
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(120, 23);
-            numericUpDown1.TabIndex = 5;
+            numStock.AccessibleName = "numStock";
+            numStock.Location = new Point(40, 310);
+            numStock.Name = "numStock";
+            numStock.Size = new Size(120, 23);
+            numStock.TabIndex = 5;
             // 
             // btnAdd
             // 
@@ -104,6 +105,7 @@
             btnAdd.TabIndex = 6;
             btnAdd.Text = "Add Ingredient";
             btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
             // 
             // btnUpdate
             // 
@@ -122,6 +124,7 @@
             btnRetire.TabIndex = 8;
             btnRetire.Text = "Retire Ingredient";
             btnRetire.UseVisualStyleBackColor = true;
+            btnRetire.Click += btnRetire_Click;
             // 
             // IngredientsForm
             // 
@@ -132,28 +135,28 @@
             Controls.Add(btnRetire);
             Controls.Add(btnUpdate);
             Controls.Add(btnAdd);
-            Controls.Add(numericUpDown1);
-            Controls.Add(label3);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(dataGridView1);
-            Controls.Add(label1);
+            Controls.Add(numStock);
+            Controls.Add(lblStock);
+            Controls.Add(txtIngredientName);
+            Controls.Add(lblName);
+            Controls.Add(dgvIngredients);
+            Controls.Add(lblHeading);
             Name = "IngredientsForm";
             Text = "IngredientsForm";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvIngredients).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numStock).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private DataGridView dataGridView1;
-        private Label label2;
-        private TextBox textBox1;
-        private Label label3;
-        private NumericUpDown numericUpDown1;
+        private Label lblHeading;
+        private DataGridView dgvIngredients;
+        private Label lblName;
+        private TextBox txtIngredientName;
+        private Label lblStock;
+        private NumericUpDown numStock;
         private Button btnAdd;
         private Button btnUpdate;
         private Button btnRetire;
