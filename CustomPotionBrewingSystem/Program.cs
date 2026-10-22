@@ -12,6 +12,11 @@ namespace CustomPotionBrewingSystem
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+            using (var db = new CustomPotionBrewingSystem.Data.PotionContext())
+            {
+                db.Database.EnsureCreated();
+            }
+            
         }
     }
 }
