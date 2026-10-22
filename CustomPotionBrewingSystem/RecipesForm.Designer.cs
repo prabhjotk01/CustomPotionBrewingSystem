@@ -40,6 +40,9 @@
             btnAddngredient = new Button();
             dgvRecipeIngredients = new DataGridView();
             btnSaveRecipe = new Button();
+            colIngredientId = new DataGridViewTextBoxColumn();
+            colIngredientName = new DataGridViewTextBoxColumn();
+            colQuantity = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)numDuration).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numQuantity).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvRecipeIngredients).BeginInit();
@@ -121,16 +124,18 @@
             // 
             // btnAddngredient
             // 
-            btnAddngredient.Location = new Point(32, 321);
+            btnAddngredient.Location = new Point(34, 322);
             btnAddngredient.Name = "btnAddngredient";
-            btnAddngredient.Size = new Size(129, 23);
+            btnAddngredient.Size = new Size(173, 23);
             btnAddngredient.TabIndex = 9;
             btnAddngredient.Text = "Add Ingredient to Recipe";
             btnAddngredient.UseVisualStyleBackColor = true;
+            btnAddngredient.Click += btnAddngredient_Click;
             // 
             // dgvRecipeIngredients
             // 
             dgvRecipeIngredients.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvRecipeIngredients.Columns.AddRange(new DataGridViewColumn[] { colIngredientId, colIngredientName, colQuantity });
             dgvRecipeIngredients.Location = new Point(35, 363);
             dgvRecipeIngredients.Name = "dgvRecipeIngredients";
             dgvRecipeIngredients.Size = new Size(240, 150);
@@ -144,6 +149,22 @@
             btnSaveRecipe.TabIndex = 11;
             btnSaveRecipe.Text = "Save Recipe";
             btnSaveRecipe.UseVisualStyleBackColor = true;
+            btnSaveRecipe.Click += btnSaveRecipe_Click;
+            // 
+            // colIngredientId
+            // 
+            colIngredientId.HeaderText = "Ingredient ID";
+            colIngredientId.Name = "colIngredientId";
+            // 
+            // colIngredientName
+            // 
+            colIngredientName.HeaderText = "Ingredient Name";
+            colIngredientName.Name = "colIngredientName";
+            // 
+            // colQuantity
+            // 
+            colQuantity.HeaderText = "Quantity Required";
+            colQuantity.Name = "colQuantity";
             // 
             // RecipesForm
             // 
@@ -185,5 +206,8 @@
         private Button btnAddngredient;
         private DataGridView dgvRecipeIngredients;
         private Button btnSaveRecipe;
+        private DataGridViewTextBoxColumn colIngredientId;
+        private DataGridViewTextBoxColumn colIngredientName;
+        private DataGridViewTextBoxColumn colQuantity;
     }
 }
