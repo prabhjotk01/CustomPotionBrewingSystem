@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            button1 = new Button();
+            button2 = new Button();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.AccessibleName = "btnIngredienrs";
+            button1.Location = new Point(85, 96);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Manage Ingredients";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.AccessibleName = "btnRecipes";
+            button2.Location = new Point(89, 128);
+            button2.Name = "button2";
+            button2.Size = new Size(147, 23);
+            button2.TabIndex = 1;
+            button2.Text = "Manage Recipes";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Text = "Form1";
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Name = "Form1";
+            Text = "Potion Brewing System";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
+        private Button button2;
     }
 }
