@@ -39,7 +39,7 @@
             // button1
             // 
             button1.AccessibleName = "btnIngredienrs";
-            button1.Location = new Point(85, 96);
+            button1.Location = new Point(34, 12);
             button1.Name = "button1";
             button1.Size = new Size(151, 23);
             button1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // button2
             // 
             button2.AccessibleName = "btnRecipes";
-            button2.Location = new Point(89, 128);
+            button2.Location = new Point(34, 51);
             button2.Name = "button2";
             button2.Size = new Size(147, 23);
             button2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // button3
             // 
             button3.AccessibleName = "btnBrewing";
-            button3.Location = new Point(91, 160);
+            button3.Location = new Point(34, 89);
             button3.Name = "button3";
             button3.Size = new Size(145, 23);
             button3.TabIndex = 2;
@@ -69,7 +69,7 @@
             // button4
             // 
             button4.AccessibleName = "btnPotions";
-            button4.Location = new Point(93, 193);
+            button4.Location = new Point(34, 129);
             button4.Name = "button4";
             button4.Size = new Size(143, 23);
             button4.TabIndex = 3;
@@ -79,7 +79,7 @@
             // button5
             // 
             button5.AccessibleName = "btnDashboard";
-            button5.Location = new Point(97, 231);
+            button5.Location = new Point(34, 170);
             button5.Name = "button5";
             button5.Size = new Size(139, 23);
             button5.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             label1.AccessibleName = "lblTitle";
             label1.AutoSize = true;
-            label1.Location = new Point(97, 283);
+            label1.Location = new Point(34, 209);
             label1.Name = "label1";
             label1.Size = new Size(174, 15);
             label1.TabIndex = 5;
